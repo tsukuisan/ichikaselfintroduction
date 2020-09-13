@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Chika Tsukui</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'gyc7syn',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+    </script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/
+jquery/3.5.1/jquery.min.js"></script>        
+</head>
+
+<body>
+    <header>
+       <div id="header">
+       <div class="inheader">
+        <div class="title">
+            <h1>Chika Tsukui</h1>
+            <p>Graphic Design / Web Design</p>
+        </div>
+        <div class="content">
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>    
+        </div>
+        </div>    
+       </div>
+    </header>
+    
+    <div id="top">
+        <img src="300ppi/topimage.jpg" alt="">
+    </div>
+    
+    <div id="profile">
+        <label for="label1">
+            <h2>Profile</h2>
+        </label>
+        <input type="checkbox" id="label1"/>
+        <div class="hidden_show">
+                <p>
+                    東京都立大学システムデザイン学部インダストリアルアートコース4年生<br>
+                    Life is Tech! Webデザインメンター
+                </p>
+                <br>
+                <br>
+                <h3>about me</h3>
+                <p>
+                    ● 大学院に受かりました<br>
+                    ● ごはんとYouTuberが好きです<br>
+                    ● 特に東海オンエアが大好きです<br>
+                </p>    
+        </div>
+    </div>
+    
+    <div id="works">
+       
+        <h2>Works</h2>
+        
+        <h3>Graphic Design</h3>
+        <div class="workimage">
+            <a class="col-3">
+                <img class="calender" src="300ppi/calender.jpg" alt="">
+            </a>
+            <a class="col-3">
+                <img class="calender" src="300ppi/souvenir.jpg" alt="">
+            </a>
+            <a class="col-3">
+                <img class="calender" src="300ppi/insence.jpg" alt="">
+            </a>
+            <a class="col-3">
+                <img class="calender" src="300ppi/reset.jpg" alt="">
+            </a>
+            <a class="col-3">
+                <img class="calender" src="300ppi/ito.jpg" alt="">
+            </a>
+            
+        </div>
+                       
+        <h3>Web Design</h3>
+        <div class="workimage">
+            <a class="col-3">
+                <img class="calender" src="300ppi/chocolatedays.jpg" alt="">
+            </a>            
+        </div>
+        
+        <h3>Others / Illustrations</h3>
+        <div class="workimage">
+            <a class="col-3">
+                <img class="calender" src="300ppi/haikei.jpg" alt="">
+            </a>
+            <a class="col-3">
+                <img class="calender" src="300ppi/namecard.jpg" alt="">
+            </a>
+            <a class="col-3">
+                <img class="calender" src="300ppi/kinsei.jpg" alt="">
+            </a>                        
+        </div>
+        
+    </div>
+    
+    <div id="contact">
+       <label for="label2">
+           <h2>Contact</h2>
+       </label>
+       <input type="checkbox" id="label2"/>
+       <div class="hidden_show">
+            <p>
+                mail adress:chiko.rinren★gmail.com(★→@)
+            </p>
+            <div class="links">
+                <a href="https://twitter.com/_tskchk__" target="_blank">
+                <img src="300ppi/twitter.jpg" alt=""></a>
+                <a href="https://www.instagram.com/iammentaaai/?hl=ja" target="_blank">
+                <img src="300ppi/instagram.jpg" alt=""></a>
+            </div>
+       </div>
+    </div>
+    
+    <footer>
+        <p><a href="#top">&copy; Chika Tsukui</a></p>
+    </footer>
+</body>
