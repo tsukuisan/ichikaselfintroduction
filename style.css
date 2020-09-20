@@ -26,6 +26,13 @@ html,body,header{
 /*    position: absolute;*/
 }
 
+.inheader p{
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
 .inheader .fixed{
     position: fixed;
     top: 0;
@@ -127,11 +134,9 @@ h2{
 #profile input:checked ~ .hidden_show{
     height: auto;
     opacity: 1;
-    margin-bottom: 60px;    
+/*    margin-bottom: 60px;    */
 }
 
-.hidden_show{
-}
 
 .hidden_show p{
     font-family: a-otf-gothic-bbb-pr6n, sans-serif;
@@ -153,6 +158,287 @@ h2{
     font-weight: 700;
     font-style: normal;
     font-size: 40px;    
+}
+
+/* ポップアップウインドウの設定 */
+.popup {
+  background-color: #ffffff;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60vw;
+  height: 50vw;
+  overflow-y: scroll;
+}
+/* チェックボックスの初期設定 */
+#popup-on{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on:checked + .popup{
+  display: block;
+}
+
+/* 閉じるアイコン（右上） */
+.icon-close{
+  background: #000;
+  color: #fff;
+  font-size: 30px;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* 閉じるボタン */
+.btn-close{
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0px auto 10px auto;
+  width: 10%;
+  text-align: center;
+}
+
+/* 開くボタン */
+.btn-open{
+  background: #fff;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+}
+
+/* ポップアップの内容 */
+.popup-content{
+  margin: 50px auto 15px auto;
+  width: 90%;
+}
+
+p{
+    font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+ 
+}
+
+.layer-img{
+    width: 100%;
+}
+
+#popup_on1,.popup1{
+  background-color: #ffffff;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60vw;
+  height: 50vw;
+  overflow-y: scroll;
+}
+
+#popup-on1{
+  display: none;
+}
+
+#popup-on1:checked + .popup1 {
+    display: block;
+}
+
+#popup_on2,.popup2{
+  background-color: #ffffff;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60vw;
+  height: 50vw;
+  overflow-y: scroll;
+}
+
+#popup-on2{
+  display: none;
+}
+
+#popup-on2:checked + .popup2 {
+    display: block;
+}
+
+#popup_on3,.popup3{
+  background-color: #ffffff;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60vw;
+  height: 48vw;
+  overflow-y: scroll;
+}
+
+#popup-on3{
+  display: none;
+}
+
+#popup-on3:checked + .popup3 {
+    display: block;
+}
+
+#popup_on4,.popup4{
+  background-color: #ffffff;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60vw;
+  height: 50vw;
+  overflow-y: scroll;
+}
+
+#popup-on4{
+  display: none;
+}
+
+#popup-on4:checked + .popup4 {
+    display: block;
+}
+
+#popup_on5,.popup5{
+  background-color: #ffffff;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60vw;
+  height: 50vw;
+  overflow-y: scroll;
+}
+
+#popup-on5{
+  display: none;
+}
+
+#popup-on5:checked + .popup5 {
+    display: block;
+}
+
+#popup_on6,.popup6{
+  background-color: #ffffff;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60vw;
+  height: 50vw;
+  overflow-y: scroll;
+}
+
+#popup-on6{
+  display: none;
+}
+
+#popup-on6:checked + .popup6 {
+    display: block;
+}
+
+#popup_on7,.popup7{
+  background-color: #ffffff;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60vw;
+  height: 50vw;
+  overflow-y: scroll;
+}
+
+#popup-on7{
+  display: none;
+}
+
+#popup-on7:checked + .popup7 {
+    display: block;
+}
+
+#popup_on8,.popup8{
+  background-color: #ffffff;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60vw;
+  height: 45vw;
+  overflow-y: scroll;
+}
+
+#popup-on8{
+  display: none;
+}
+
+#popup-on8:checked + .popup8 {
+    display: block;
+}
+
+#popup_on9,.popup9{
+  background-color: #ffffff;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60vw;
+  height: 50vw;
+  overflow-y: scroll;
+}
+
+#popup-on9{
+  display: none;
+}
+
+#popup-on9:checked + .popup9 {
+    display: block;
 }
 
 #works{
@@ -249,11 +535,9 @@ h2{
 #contact input:checked ~ .hidden_show{
     height: auto;
     opacity: 1;
-    margin-bottom: 60px;
+/*    margin-bottom: 60px;*/
 }
 
-#contact h2{
-}
 
 #contact h2:hover{
     color: #ffffff;
@@ -267,7 +551,7 @@ h2{
 }
 
 .links img{
-    width: 5%;
+    width: 10%;
     padding: 10px; 
     padding-left: 0px;
 }
@@ -284,6 +568,9 @@ footer{
 }
 
 footer a{
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     text-decoration: none;
     color: #000000;
 }
